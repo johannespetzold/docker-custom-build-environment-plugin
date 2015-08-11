@@ -192,7 +192,7 @@ public class Docker implements Closeable {
 
         ArgumentListBuilder args = dockerCommand()
             .add("exec", "--tty")
-            .add("--user", userId)
+//            .add("--user", userId)
             .add(container);
 
         boolean[] originalMask = starter.masks();
